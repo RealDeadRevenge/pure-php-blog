@@ -1,0 +1,20 @@
+{
+    "name": "realdeadrevenge/php-blog-test",
+    "description": "Simple blog test task on pure PHP with Smarty and MySQL",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.3",
+        "smarty/smarty": "^5.5",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
