@@ -1,0 +1,9 @@
+
+
+CREATE DATABASE IF NOT EXISTS blog CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS 'blog_user'@'%' IDENTIFIED BY 'secret';
+
+GRANT ALL PRIVILEGES ON blog.* TO 'blog_user'@'%';
+
+FLUSH PRIVILEGES;
