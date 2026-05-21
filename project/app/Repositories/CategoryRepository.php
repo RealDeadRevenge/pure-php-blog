@@ -33,7 +33,7 @@ class CategoryRepository
             $statement = $this->pdo->prepare('
                 SELECT a.id, a.image, a.title, a.description, a.views, a.created_at
                 FROM articles a
-                INNER JOIN article_category ac ON ac.category_id = a.id
+                INNER JOIN article_category ac ON ac.article_id = a.id
                 WHERE ac.category_id = :category_id
                 ORDER BY a.created_at DESC 
                 LIMIT 3
